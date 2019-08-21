@@ -1,0 +1,3 @@
+while you.say('see u tomorrow') do
+    I.sleep = 0
+end
