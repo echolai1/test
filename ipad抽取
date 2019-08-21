@@ -1,0 +1,32 @@
+import random
+import time
+import datetime
+
+list1=['ipad mini','ipad pro']
+
+list2=[]
+
+mini=0
+pro=0
+
+for i in range(5):
+    a=random.choice(list1)
+    list2.append(a)
+    if a=='ipad mini':
+        mini+=1
+    else:
+        pro+=1
+
+print('五次抽取结果是'+str(list2))
+time.sleep(1)
+print('抽到ipad mini的次数为'+str(mini)+'次')
+time.sleep(1)
+print('抽到ipad pro的次数为'+str(pro)+'次')
+time.sleep(1)
+if mini>pro:
+    print('买ipad mini！')
+else:
+    print('买ipad pro！')
+
+nowTime=datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+print(nowTime)
